@@ -3563,7 +3563,7 @@ sup, sub {
     margin-left: 5%;
     font-weight: 100; }
   .education-item i {
-    padding-right: 10px; }
+    width: 35px; }
   .education-item a {
     color: #222; }
 
