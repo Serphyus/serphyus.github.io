@@ -3516,7 +3516,7 @@ sup, sub {
   height: 10px;
   width: 60%;
   margin: auto;
-  margin-right: 20px;
+  margin-right: 30px;
   border-radius: 10px;
   background-color: #ccc; }
   .skill-bar div {
@@ -3535,15 +3535,20 @@ sup, sub {
     font-weight: 400; }
 
 .skill-section {
+  box-sizing: border-box;
   height: 90%;
   border-radius: 10px;
-  border: 2px solid #2c3949; }
+  border: 2px solid #2c3949;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .skills {
   width: 48%; }
 
 .education-item {
   width: 100%;
+  height: 46%;
   border-radius: 10px;
   border: 2px solid #2c3949; }
   .education-item h3 {
@@ -3558,7 +3563,7 @@ sup, sub {
     border: 2px solid #2c3949; }
   .education-item p {
     margin-left: 5%;
-    font-weight: 100; }
+    font-size: larger; }
   .education-item i {
     width: 35px; }
   .education-item a {
