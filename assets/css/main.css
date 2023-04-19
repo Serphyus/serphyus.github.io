@@ -3379,9 +3379,9 @@ sup, sub {
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  pointer-events: none; }
+  background-attachment: fixed; }
   #particles-js .particles-js-canvas-el {
+    pointer-events: none;
     height: 100vh !important; }
 
 .header {
@@ -3390,7 +3390,7 @@ sup, sub {
   text-align: center;
   color: #FFF;
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
@@ -3471,12 +3471,12 @@ sup, sub {
 .down {
   color: #FFF;
   position: absolute;
-  bottom: 25px;
+  bottom: 120px;
   width: 100%;
   margin: 0 auto;
   display: block;
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   line-height: 30px;
   cursor: pointer;
   outline: 0 !important;
