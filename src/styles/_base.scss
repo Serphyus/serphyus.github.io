@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800');
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: block;
+	background-color: $background;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: $text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Darker Grotesque", sans-serif;
+	font-weight: 800;
+}
+
+h1 {
+	font-size: 36px
+}
+
+h2 {
+	font-size: 28px
+}
+
+h3 {
+	font-size: 24px
+}
+
+h4 {
+	font-size: 20px
+}
+
+h5 {
+	font-size: 18px
+}
+
+h6 {
+	font-size: 16px
+}
+
+p {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
