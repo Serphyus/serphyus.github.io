@@ -40,13 +40,6 @@ html[data-theme="dark"] {
 		--bg-btn: rgba(224, 224, 224, 1); 
 		--bg-btn-hover: rgba(204, 204, 204, 1);
 	}
-};
-
-body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	display: block;
-	background-color: var(--bg-light);
 }
 
 body {
