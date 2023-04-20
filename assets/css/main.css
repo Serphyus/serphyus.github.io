@@ -41,7 +41,7 @@ p {
 
 .header {
   width: 88%;
-  margin: 0 auto 35px auto;
+  margin: 20px auto 35px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
