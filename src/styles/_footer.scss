@@ -1,6 +1,12 @@
+.bottom-container {
+	margin-bottom: 0;
+}
+
 .footer {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 0;
+	max-width: 1250px;
 }
 
 .footer-split {

@@ -189,8 +189,7 @@ html[data-theme="light"] .dark-toggle {
 .project {
   max-width: 25%;
   margin: 2.5%;
-  transition: transform .2s ease-in-out;
-  background-color: var(--bg-light); }
+  transition: transform .2s ease-in-out; }
   .project img {
     border: 2px solid var(--secondary-dark);
     width: 100%;
@@ -206,11 +205,68 @@ html[data-theme="light"] .dark-toggle {
 .project:hover {
   transform: scale(1.02); }
 
-.footer {
-  border-top: 2px solid var(--text-light);
+.timeline {
   width: 100%;
+  list-style-type: none; }
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  margin-top: 30px;
+  left: 50%;
+  width: 3px;
+  height: 65%;
+  z-index: 1; }
+
+.timeline-item, .timeline-item-inverted {
+  position: relative;
+  z-index: 2;
   display: flex;
-  justify-content: space-between; }
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px; }
+
+.timeline-item {
+  flex-direction: row-reverse; }
+
+.timeline-item-inverted {
+  text-align: right; }
+
+.timeline-panel {
+  margin: auto 0 auto 0;
+  width: 35%; }
+  .timeline-panel h4 {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .timeline-panel h3 {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .timeline-panel p {
+    margin-bottom: 0; }
+
+.timeline-image {
+  width: 180px;
+  height: 180px;
+  margin: auto 20px auto 20px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50%; }
+
+.bottom-container {
+  margin-bottom: 0; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  max-width: 1250px; }
+
+.footer-split {
+  background-color: var(--text-light);
+  width: 100%;
+  height: 2px; }
 
 .copyright-text {
   height: 100px;
