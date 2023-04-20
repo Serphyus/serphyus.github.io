@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800");
+html {
+  scroll-behavior: smooth; }
+
 html, html[data-theme="light"] {
   --text-light: rgba(224, 224, 224, 0.9);
   --primary-dark: rgba(17, 16, 22, 1);
@@ -132,6 +135,11 @@ html[data-theme="light"] .dark-toggle {
 .light-toogle:hover {
   background-color: var(--bg-btn-hover); }
 
+.section {
+  width: 70%;
+  max-width: 1250px;
+  margin: 40px auto 40px auto; }
+
 .introduction {
   display: flex;
   justify-content: space-between; }
@@ -158,11 +166,6 @@ html[data-theme="light"] .dark-toggle {
   .introduction-text p {
     font-size: 18px;
     line-height: 1.7; }
-
-.section {
-  width: 70%;
-  max-width: 1250px;
-  margin: 40px auto 40px auto; }
 
 .footer {
   border-top: 2px solid var(--text-light);
