@@ -4,7 +4,7 @@ body {
 	// light theme
 	--text-light: rgba(224, 224, 224, 0.9);
 	--primary-dark: rgba(17, 16, 22, 1);
-	--secondary-dark: rgba(29, 28, 44, 0.7);
+	--secondary-dark: rgba(29, 28, 44, 0.8);
 	--bg-light: rgba(224, 224, 224, 0.3);
 	--bg-btn: rgba(224, 224, 224, 1); 
 	--bg-btn-hover: rgba(204, 204, 204, 1); ;
@@ -15,13 +15,10 @@ body {
 	background-color: var(--bg-light)
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	color: var(--primary-dark);
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Darker Grotesque", sans-serif;
 	font-weight: 800;
+	color: var(--primary-dark);
 }
 
 h1 {
@@ -51,4 +48,5 @@ h6 {
 p {
 	font-family: "Inter", sans-serif;
 	font-size: 18px;
+	color: var(--secondary-dark);
 }
