@@ -1,11 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800");
-body {
+html, html[data-theme="light"] {
   --text-light: rgba(224, 224, 224, 0.9);
   --primary-dark: rgba(17, 16, 22, 1);
   --secondary-dark: rgba(29, 28, 44, 0.8);
   --bg-light: rgba(224, 224, 224, 0.3);
   --bg-btn: rgba(224, 224, 224, 1);
-  --bg-btn-hover: rgba(204, 204, 204, 1);
+  --bg-btn-hover: rgba(204, 204, 204, 1); }
+
+html[data-theme="dark"] {
+  --text-light: rgba(29, 28, 44, 0.8);
+  --primary-dark: rgba(224, 224, 224, 1);
+  --secondary-dark: rgba(224, 224, 224, 0.8);
+  --bg-light: rgba(17, 16, 22, 1);
+  --bg-btn: rgba(29, 28, 44, 1);
+  --bg-btn-hover: rgba(75, 72, 112, 1); }
+
+@media (prefers-color-scheme: dark) {
+  html, html[data-theme="dark"] {
+    --text-light: rgba(29, 28, 44, 0.8);
+    --primary-dark: rgba(224, 224, 224, 1);
+    --secondary-dark: rgba(224, 224, 224, 0.8);
+    --bg-light: rgba(17, 16, 22, 1);
+    --bg-btn: rgba(29, 28, 44, 1);
+    --bg-btn-hover: rgba(75, 72, 112, 1); }
+
+  html[data-theme="light"] {
+    --text-light: rgba(224, 224, 224, 0.9);
+    --primary-dark: rgba(17, 16, 22, 1);
+    --secondary-dark: rgba(29, 28, 44, 0.8);
+    --bg-light: rgba(224, 224, 224, 0.3);
+    --bg-btn: rgba(224, 224, 224, 1);
+    --bg-btn-hover: rgba(204, 204, 204, 1); } }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  background-color: var(--bg-light); }
+
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
@@ -76,20 +108,28 @@ p {
     margin: auto;
     font-size: 22px; }
 
-.dark-mode-symbol {
-  visibility: visible;
+html[data-theme="dark"] .light-toogle {
+  visibility: visible; }
+html[data-theme="dark"] .dark-toggle {
+  visibility: hidden; }
+
+html[data-theme="light"] .light-toogle {
+  visibility: hidden; }
+html[data-theme="light"] .dark-toggle {
+  visibility: visible; }
+
+.dark-toogle {
   color: var(--primary-dark);
   background-color: var(--bg-btn); }
 
-.dark-mode-symbol:hover {
+.dark-toogle:hover {
   background-color: var(--bg-btn-hover); }
 
-.light-mode-symbol {
-  visibility: hidden;
+.light-toogle {
   color: var(--primary-dark);
   background-color: var(--bg-btn); }
 
-.light-mode-symbol:hover {
+.light-toogle:hover {
   background-color: var(--bg-btn-hover); }
 
 .introduction {
@@ -143,6 +183,7 @@ p {
   text-align: center;
   cursor: pointer; }
   .top-btn ion-icon {
+    color: var(--primary-dark);
     font-size: 22px;
     height: inherit; }
 

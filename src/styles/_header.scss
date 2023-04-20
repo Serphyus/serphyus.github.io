@@ -42,22 +42,38 @@
 	}
 }
 
-.dark-mode-symbol {
-	visibility: visible;
+html[data-theme="dark"] {
+	.light-toogle {
+		visibility: visible;
+	}
+	.dark-toggle {
+		visibility: hidden;
+	}
+}
+
+html[data-theme="light"] {
+	.light-toogle {
+		visibility: hidden;
+	}
+	.dark-toggle {
+		visibility: visible;
+	}
+}
+
+.dark-toogle {
 	color: var(--primary-dark);
 	background-color: var(--bg-btn);
 }
 
-.dark-mode-symbol:hover {
+.dark-toogle:hover {
 	background-color: var(--bg-btn-hover);
 }
 
-.light-mode-symbol {
-	visibility: hidden;
+.light-toogle {
 	color: var(--primary-dark);
 	background-color: var(--bg-btn);
 }
 
-.light-mode-symbol:hover {
+.light-toogle:hover {
 	background-color: var(--bg-btn-hover);
 }
