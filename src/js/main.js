@@ -48,4 +48,9 @@ document.addEventListener("DOMContentLoaded", function(event){
 			}
 		});
 	}
+
+	toTopBtn = document.getElementsByClassName("top-btn")[0];
+	toTopBtn.addEventListener('click', () => {
+		window.scrollTo(0, 0);
+	})
 });
