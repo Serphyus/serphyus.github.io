@@ -1,15 +1,18 @@
 .header {
 	margin: 0 5% 35px 5%;
-	display: -webkit-flex; /* Safari */
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
 
-	div {
-		margin: auto 0 auto 0;
-	}
+.title {
+	width: 30%;
+	text-align: left;
 }
 
 .navigator {
+	width: 30%;
 	display: flex;
 	justify-content: center;
 	a {
@@ -19,9 +22,10 @@
 }
 
 .theme-toggle-container {
-	width: 45px;
+	width: 30%;
 	height: 45px;
-	cursor: pointer;
+	display: flex;
+	justify-content: right;
 }
 
 .theme-btn {
@@ -30,6 +34,7 @@
 	height: 45px;
 	display: flex;
 	border-radius: 50%;
+	cursor: pointer;
 	ion-icon {
 		margin: auto;
 		font-size: 22px;
@@ -38,12 +43,20 @@
 
 .dark-mode-symbol {
 	visibility: visible;
-	color: black;
-	background-color: #e0e0e0;
+	color: var(--primary-dark);
+	background-color: var(--bg-btn);
+}
+
+.dark-mode-symbol:hover {
+	background-color: var(--bg-btn-hover);
 }
 
 .light-mode-symbol {
 	visibility: hidden;
-	color: white;
-	background-color: #3c3e44;
+	color: var(--primary-dark);
+	background-color: var(--bg-btn);
+}
+
+.light-mode-symbol:hover {
+	background-color: var(--bg-btn-hover);
 }

@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800');
 
 body {
+	// light theme
+	--text-light: rgba(224, 224, 224, 0.9);
+	--primary-dark: rgba(17, 16, 22, 1);
+	--secondary-dark: rgba(29, 28, 44, 0.7);
+	--bg-light: rgba(224, 224, 224, 0.3);
+	--bg-btn: rgba(224, 224, 224, 1); 
+	--bg-btn-hover: rgba(204, 204, 204, 1); ;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	display: block;
-	background-color: $background;
+	background-color: var(--bg-light)
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	color: $text;
+	color: var(--primary-dark);
 }
 
 h1, h2, h3, h4, h5, h6 {

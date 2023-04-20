@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800");
 body {
+  --text-light: rgba(224, 224, 224, 0.9);
+  --primary-dark: rgba(17, 16, 22, 1);
+  --secondary-dark: rgba(29, 28, 44, 0.7);
+  --bg-light: rgba(224, 224, 224, 0.3);
+  --bg-btn: rgba(224, 224, 224, 1);
+  --bg-btn-hover: rgba(204, 204, 204, 1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
-  background-color: #ffffff; }
+  background-color: var(--bg-light); }
 
 h1, h2, h3, h4, h5, h6, p {
-  color: #181818; }
+  color: var(--primary-dark); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Darker Grotesque", sans-serif;
@@ -36,14 +42,17 @@ p {
 
 .header {
   margin: 0 5% 35px 5%;
-  display: -webkit-flex;
-  /* Safari */
   display: flex;
-  justify-content: space-between; }
-  .header div {
-    margin: auto 0 auto 0; }
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.title {
+  width: 30%;
+  text-align: left; }
 
 .navigator {
+  width: 30%;
   display: flex;
   justify-content: center; }
   .navigator a {
@@ -51,38 +60,47 @@ p {
     text-decoration: none; }
 
 .theme-toggle-container {
-  width: 45px;
+  width: 30%;
   height: 45px;
-  cursor: pointer; }
+  display: flex;
+  justify-content: right; }
 
 .theme-btn {
   position: absolute;
   width: 45px;
   height: 45px;
   display: flex;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: pointer; }
   .theme-btn ion-icon {
     margin: auto;
     font-size: 22px; }
 
 .dark-mode-symbol {
   visibility: visible;
-  color: black;
-  background-color: #e0e0e0; }
+  color: var(--primary-dark);
+  background-color: var(--bg-btn); }
+
+.dark-mode-symbol:hover {
+  background-color: var(--bg-btn-hover); }
 
 .light-mode-symbol {
   visibility: hidden;
-  color: white;
-  background-color: #3c3e44; }
+  color: var(--primary-dark);
+  background-color: var(--bg-btn); }
+
+.light-mode-symbol:hover {
+  background-color: var(--bg-btn-hover); }
 
 .introduction {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .introduction-img {
   width: 40%;
+  object-fit: cover;
   border-radius: 15px;
-  box-shadow: 10px 10px gray;
+  box-shadow: 10px 10px var(--secondary-dark);
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -91,7 +109,7 @@ p {
 
 .introduction-text {
   width: 50%;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
   margin-top: auto;
   margin-bottom: auto; }
   .introduction-text h1 {
@@ -103,7 +121,7 @@ p {
 
 .section {
   width: 70%;
-  max-width: 1300px;
-  margin: 0 auto 0 auto; }
+  max-width: 1250px;
+  margin: 40px auto 40px auto; }
 
 /*# sourceMappingURL=main.css.map */
