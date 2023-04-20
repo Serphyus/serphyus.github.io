@@ -1,0 +1,30 @@
+.footer {
+	border-top: 2px solid var(--text-light);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.copyright-text {
+	height: 100px;
+	margin: auto 10px auto 10px;
+}
+
+.top-btn {
+	background-color: var(--bg-btn);
+	border-radius: 10px;
+	margin: auto 10px auto 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+
+	ion-icon {
+		font-size: 22px;
+		height: inherit;
+	}
+}
+
+.top-btn:hover {
+	background-color: var(--bg-btn-hover);
+}
