@@ -40,9 +40,10 @@ p {
   color: var(--secondary-dark); }
 
 .header {
-  margin: 0 5% 35px 5%;
+  width: 88%;
+  margin: 0 auto 35px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
 
