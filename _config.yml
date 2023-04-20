@@ -1,24 +1,29 @@
 # ============= #
 # Site settings #
 # ============= #
+
 title: Sigurd Pettersen
-description: Jekyll static website
+description: Personal website
 url: https://serphyus.github.io
+
 
 # ============= #
 # User settings #
 # ============= #
+
 fullname: Sigurd Pettersen
+first_name: Sigurd
+last_name: Pettersen
 username: Serphyus
-user_title: Cybersecurity Student
+user_title: Cybersecurity student & software developer
+
 email: serphyus@gmail.com
-# twitter_username: username
-# instagram_username: username
-# facebook_username: username
 linkedin_username: sigurd-pettersen-a24705233
 github_username:  serphyus
-# medium_username: username
-# medium_url: username
-# gplus_username: username
+
+
+# ============= #
+# Misc Settings #
+# ============= #
 
 exclude: ['src']

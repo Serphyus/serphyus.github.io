@@ -1,83 +1,30 @@
-#projects {
-	width: 90%;
-	margin: 0 auto;
-	max-width: 1024px;
-}
-
-.project-item {
-	border: 2px solid #2c3949;
-	border-radius: 10px;
-	width: 450px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	min-height: 240px;
-	height: auto;
-
-	h3 {
-		margin-top: 0px;
-		margin-bottom: 20px;
-		font-weight: 300;
-	}
-
-	.split {
-		width: 90%;
-		margin: auto;
-		border-radius: 2px;
-		border: 2px solid #2c3949;
-	}
-
-	p {
-		padding-top: 10px;
-		margin: 0 5%;
-		color: #222;
-		font-size: larger;
-		text-align: left;
-		height: 100px;
-	}
-	
-	.project-footer {
-		margin: auto;
-		width: 90%;
-		display: flex;
-		justify-content: left;
-
-		p {
-			margin: 0%;
-			margin-right: 5%;
-			margin-top: 20px;
-			margin-bottom: 10px;
-			height: auto;
-		}
-
-		svg {
-			position: relative;
-			top: 2px;
-			color: #222;
-		}
-	
-		i {
-			text-align: center;
-			width: 20px;
-		}
-	}
-}
-
-.project-section {
-	margin: auto;
-	width: 100%;
+.showcase {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
+}
 
-	a {
-		text-decoration: none;
+.project {
+	max-width: 25%;
+	margin: 2.5%;
+	transition: transform .2s ease-in-out;
+	
+	img {
+		border: 2px solid var(--secondary-dark);
+		width: 100%;
+		border-radius: 10px;
+		overflow-clip-margin: content-box;
+		overflow: hidden;
+	}
+	* {
+		text-align: center;
+		text-decoration: none
+	}
+	h2, p {
+		margin: 10px;
 	}
 }
 
-.personal-projects {
-	margin-top: 100px;
-	text-align: center;
-	h1 {
-		font-weight: 400;
-	}
+.project:hover {
+	transform: scale(1.02);
 }
