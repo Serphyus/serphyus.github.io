@@ -1,0 +1,31 @@
+.showcase {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project {
+	max-width: 25%;
+	margin: 2.5%;
+	transition: transform .2s ease-in-out;
+	background-color: var(--bg-light);
+	
+	img {
+		border: 2px solid var(--secondary-dark);
+		width: 100%;
+		border-radius: 10px;
+		overflow-clip-margin: content-box;
+		overflow: hidden;
+	}
+	* {
+		text-align: center;
+		text-decoration: none
+	}
+	h2, p {
+		margin: 10px;
+	}
+}
+
+.project:hover {
+	transform: scale(1.02);
+}

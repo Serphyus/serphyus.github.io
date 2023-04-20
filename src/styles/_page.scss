@@ -1,5 +1,14 @@
-.section {
-	width: 70%;
+.container {
+	width: 90%;
+	padding-left: 15%;
+	padding-right: 15%;
 	max-width: 1250px;
+	padding: 25px 0 25px 0;
 	margin: 40px auto 40px auto;
+}
+
+.page-title {
+	width: 100%;
+	font-size: 60px;
+	text-align: center;
 }

@@ -6,24 +6,27 @@ html, html[data-theme="light"] {
   --text-light: rgba(224, 224, 224, 0.9);
   --primary-dark: rgba(17, 16, 22, 1);
   --secondary-dark: rgba(29, 28, 44, 0.8);
-  --bg-light: rgba(224, 224, 224, 0.3);
+  --bg-light-primary: rgba(255, 255, 255, 1);
+  --bg-light-secondary: rgba(247, 247, 247, 1);
   --bg-btn: rgba(224, 224, 224, 1);
   --bg-btn-hover: rgba(204, 204, 204, 1); }
 
 html[data-theme="dark"] {
-  --text-light: rgba(29, 28, 44, 0.8);
+  --text-light: rgba(29, 28, 44, 0.9);
   --primary-dark: rgba(224, 224, 224, 1);
   --secondary-dark: rgba(224, 224, 224, 0.8);
-  --bg-light: rgba(17, 16, 22, 1);
+  --bg-light-primary: rgba(17, 16, 22, 1);
+  --bg-light-secondary: rgb(30, 28, 39);
   --bg-btn: rgba(29, 28, 44, 1);
   --bg-btn-hover: rgba(75, 72, 112, 1); }
 
 @media (prefers-color-scheme: dark) {
   html, html[data-theme="dark"] {
-    --text-light: rgba(29, 28, 44, 0.8);
+    --text-light: rgba(29, 28, 44, 0.9);
     --primary-dark: rgba(224, 224, 224, 1);
     --secondary-dark: rgba(224, 224, 224, 0.8);
-    --bg-light: rgba(17, 16, 22, 1);
+    --bg-light-primary: rgba(17, 16, 22, 1);
+    --bg-light-secondary: rgb(30, 28, 39);
     --bg-btn: rgba(29, 28, 44, 1);
     --bg-btn-hover: rgba(75, 72, 112, 1); }
 
@@ -31,20 +34,15 @@ html[data-theme="dark"] {
     --text-light: rgba(224, 224, 224, 0.9);
     --primary-dark: rgba(17, 16, 22, 1);
     --secondary-dark: rgba(29, 28, 44, 0.8);
-    --bg-light: rgba(224, 224, 224, 0.3);
+    --bg-light-primary: rgba(255, 255, 255, 1);
+    --bg-light-secondary: rgba(237, 237, 241, 1);
     --bg-btn: rgba(224, 224, 224, 1);
     --bg-btn-hover: rgba(204, 204, 204, 1); } }
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
-  background-color: var(--bg-light); }
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: block;
-  background-color: var(--bg-light); }
+  background-color: var(--bg-light-primary); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Darker Grotesque", sans-serif;
@@ -82,7 +80,7 @@ p {
   align-items: center;
   flex-wrap: wrap; }
 
-.title {
+.site-title {
   width: 30%;
   text-align: left; }
 
@@ -135,10 +133,18 @@ html[data-theme="light"] .dark-toggle {
 .light-toogle:hover {
   background-color: var(--bg-btn-hover); }
 
-.section {
-  width: 70%;
+.container {
+  width: 90%;
+  padding-left: 15%;
+  padding-right: 15%;
   max-width: 1250px;
+  padding: 25px 0 25px 0;
   margin: 40px auto 40px auto; }
+
+.page-title {
+  width: 100%;
+  font-size: 60px;
+  text-align: center; }
 
 .introduction {
   display: flex;
@@ -166,6 +172,31 @@ html[data-theme="light"] .dark-toggle {
   .introduction-text p {
     font-size: 18px;
     line-height: 1.7; }
+
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.project {
+  max-width: 25%;
+  margin: 2.5%;
+  transition: transform .2s ease-in-out;
+  background-color: var(--bg-light); }
+  .project img {
+    border: 2px solid var(--secondary-dark);
+    width: 100%;
+    border-radius: 10px;
+    overflow-clip-margin: content-box;
+    overflow: hidden; }
+  .project * {
+    text-align: center;
+    text-decoration: none; }
+  .project h2, .project p {
+    margin: 10px; }
+
+.project:hover {
+  transform: scale(1.02); }
 
 .footer {
   border-top: 2px solid var(--text-light);
