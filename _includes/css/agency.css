@@ -325,13 +325,11 @@ header .site-intro {
         border-radius: 20px;
         margin-bottom: 50px;
         margin-right: 40px;
-        /* box-shadow: 10px 10px #ccc; */
         box-shadow: #ccc 5px 5px 2.6px;
     }
 
     header .site-intro {
         padding-top: 175px;
-        /* padding-bottom: 175px; */
     }
 
     header .site-intro {
@@ -342,7 +340,7 @@ header .site-intro {
     .intro-heading {
         text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
-        margin-top: 150px;
+        margin-top: 170px;
         font-size: 48px;
         font-weight: 700;
         line-height: 75px;
