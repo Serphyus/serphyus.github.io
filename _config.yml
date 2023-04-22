@@ -15,12 +15,12 @@ collections:
 social:
   - title: envelope
     url: mailto:serphyus@gmail.com
-  - title: twitter
-    url: http://twitter.com/serphyus
-  - title: linkedin
-    url: https://www.linkedin.com/in/sigurd-pettersen/
   - title: github
     url: http://github.com/Serphyus
+  - title: linkedin
+    url: https://www.linkedin.com/in/sigurd-pettersen/
+  - title: twitter
+    url: http://twitter.com/serphyus
 
 
 # ============== #
