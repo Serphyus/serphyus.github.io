@@ -1,50 +1,29 @@
-<div class="container projects">
-	<div class="container-intro">
-		<h1>Projects</h1>
-		<p>Take a look at some of my projects.</p>
+<!-- Projects Grid Section -->
+<section id="projects" class="bg-light-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">Projects</h2>
+				<h3 class="section-subheading text-muted">Take a look at some of my projects.</h3>
+			</div>
+		</div>
+		<div class="row">
+		{% for project in site.projects %}
+			<div class="col-md-4 col-sm-6 project-item">
+				<a href="https://github.com/Serphyus/{{ project.repository }}" class="project-link">
+					<div class="project-hover">
+						<div class="project-hover-content">
+							<i class="fa fa-external-link fa-3x"></i>
+						</div>
+					</div>
+					<img src="img/projects/{{ project.image }}" class="img-responsive img-centered" alt="">
+                    <div class="project-caption">
+                        <h4>{{ project.title }}</h4>
+                        <p class="text-muted">{{ project.subtitle }}</p>
+                    </div>
+                </a>
+			</div>
+		{% endfor %}
+		</div>
 	</div>
-	<div class="showcase">
-		<article class="project">
-			<a href="https://github.com/Serphyus/Rotation-Trigonometry">
-				<img src="/assets/images/projects/showcase_banner_0.png" alt="Rotation-Trigonometry">
-				<h2>Rotation-Trigonometry</h2>
-				<p>Game dev</p>
-			</a>
-		</article>
-		<article class="project">
-			<a href="https://github.com/Serphyus/Raycaster">
-				<img src="/assets/images/projects/showcase_banner_1.png" alt="Rotation-Trigonometry">
-				<h2>Raycaster</h2>
-				<p>Game dev</p>
-			</a>
-		</article>
-		<article class="project">
-			<a href="https://github.com/Serphyus/Centox">
-				<img src="/assets/images/projects/showcase_banner_2.png" alt="Rotation-Trigonometry">
-				<h2>Centox</h2>
-				<p>Cybersecurity Tool</p>
-			</a>
-		</article>
-		<article class="project">
-			<a href="https://github.com/Serphyus/PyCryptor">
-				<img src="/assets/images/projects/showcase_banner_3.png" alt="Rotation-Trigonometry">
-				<h2>PyCryptor</h2>
-				<p>Cybersecurity Tool</p>
-			</a>
-		</article>
-		<article class="project">
-			<a href="https://github.com/Serphyus/Memory-Game">
-				<img src="/assets/images/projects/showcase_banner_4.png" alt="Rotation-Trigonometry">
-				<h2>Memory Game</h2>
-				<p>Minigame</p>
-			</a>
-		</article>
-		<article class="project">
-			<a href="https://github.com/Serphyus/Sense-Hat-Games">
-				<img src="/assets/images/projects/showcase_banner_5.png" alt="Rotation-Trigonometry">
-				<h2>Sense Hat Games</h2>
-				<p>Minigames</p>
-			</a>
-		</article>
-	</div>
-</div>
+</section>

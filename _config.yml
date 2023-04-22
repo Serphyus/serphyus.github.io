@@ -1,29 +1,30 @@
 # ============= #
 # Site settings #
 # ============= #
-
 title: Sigurd Pettersen
-description: Personal website
+description: "Personal portfolio website"
 url: https://serphyus.github.io
 
-
-# ============= #
-# User settings #
-# ============= #
-
-fullname: Sigurd Pettersen
-first_name: Sigurd
-last_name: Pettersen
-username: Serphyus
-user_title: Cybersecurity student & software developer
-
-email: serphyus@gmail.com
-linkedin_username: sigurd-pettersen-a24705233
-github_username:  serphyus
+collections:
+  - projects
 
 
-# ============= #
-# Misc Settings #
-# ============= #
+# =============== #
+# Social networks #
+# =============== #
+social:
+  - title: envelope
+    url: mailto:serphyus@gmail.com
+  - title: twitter
+    url: http://twitter.com/serphyus
+  - title: linkedin
+    url: https://www.linkedin.com/in/sigurd-pettersen/
+  - title: github
+    url: http://github.com/Serphyus
 
-exclude: ['src']
+
+# ============== #
+# Build settings #
+# ============== #
+markdown: kramdown
+permalink: pretty
