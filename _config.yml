@@ -1,0 +1,30 @@
+# ============= #
+# Site settings #
+# ============= #
+title: Sigurd Pettersen
+description: "Personal portfolio website"
+url: https://serphyus.github.io
+
+collections:
+  - projects
+
+
+# =============== #
+# Social networks #
+# =============== #
+social:
+  - title: envelope
+    url: mailto:serphyus@gmail.com
+  - title: twitter
+    url: http://twitter.com/serphyus
+  - title: linkedin
+    url: https://www.linkedin.com/in/sigurd-pettersen/
+  - title: github
+    url: http://github.com/Serphyus
+
+
+# ============== #
+# Build settings #
+# ============== #
+markdown: kramdown
+permalink: pretty
