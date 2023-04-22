@@ -342,7 +342,7 @@ header .site-intro {
     .intro-heading {
         text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
-        margin-top: 150px;
+        margin-top: 170px;
         font-size: 48px;
         font-weight: 700;
         line-height: 75px;
